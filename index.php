@@ -12,7 +12,7 @@
 	?>
 	<!-- SUPER HEADER -->
 	<div class="row super-header text-center">
-		<h1>Funbee </h1>
+		<h1>Funbee</h1>
 	</div>
 
 
@@ -37,7 +37,7 @@
 			<!-- Articles -->
 			<div class="col-xs-9">
 				<?php 
-					for($i=0;$i<getNumberOfArticles();$i++){
+					for ($i=0; $i<getNumberOfArticles(); $i++) {
 						echo 
 						'<div class=" article row">
 							<div class="article-title col-xs-8">'.$titleArray[$i].'</div>
@@ -53,17 +53,28 @@
 			
 			<!-- Popular Feed -->
 			<div class="col-xs-3">
-				<h6>Popular Posts </h6>
+				<h6 class="text-right">Popular Posts </h6>
 				<ul class="nav text-right">
-					<li><a href="#">jsd</a></li>
-					<li><a href="#">Life</a></li>
-					<li><a href="#">College</a></li> 
-					<li><a href="#">Hacks</a></li> 
+					<?php
+						for ($i=0; $i<getNumberOfArticles(); $i++) {
+							echo '<li><a href="#">'.$topPostTitle[$i].'</a></li>';
+						}
+					?>
 				</ul>
+
+				<footer>
+					<nav class="footer navbar fixed-bottom">
+						<ul class="nav navbar-nav">
+							<li><a href="write_an_article.php">Write for us</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</nav>
+				</footer>
 			</div>
 
 		</div>
-
 	</div>
+
+
 </body>
 </html>

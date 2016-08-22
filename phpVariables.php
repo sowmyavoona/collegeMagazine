@@ -8,7 +8,7 @@
 	global $dateArray;
 	global $likesArray;
 
-	$query = "select * from article";
+	$query = "SELECT * FROM article WHERE isConfirmed = 1";
 	
 	if ($query_run = mysqli_query($mysql_connect, $query)) {
 		$query_run = mysqli_query($mysql_connect, $query);
@@ -29,5 +29,22 @@
 			}
 			$i = 0;
 		}
-	}	
+	}
+
+	$query = "SELECT title, articleId FROM article WHERE isConfirmed = 1 ORDER BY date LIMIT 5";
+
+	if ($query_run = mysqli_query($mysql_connect, $query)) {
+		$query_run = mysqli_query($mysql_connect, $query);
+			
+		if (($MaxTopArticles =mysqli_num_rows($query_run)) > 0){
+			$i = 0;
+			
+			while ($query_row = mysqli_fetch_assoc($query_run) ){
+				$topPostTitle[$i] = $query_row['title'];
+				$topPostId[$i] = $query_row['articleId'];
+				$i++;
+			}
+			$i = 0;
+		}
+	}		
 ?>
