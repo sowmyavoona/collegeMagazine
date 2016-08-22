@@ -1,0 +1,22 @@
+
+body {
+	background-color: white;
+	color: gray;
+}
+
+.super-header {
+	background-color: #39c6a3;
+
+}
+
+.navbar {
+	height: 10px ;
+}
+
+.navbar a {
+	color: gray;
+}
+
+div {
+	border: 2px solid gray;
+}
