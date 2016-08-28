@@ -1,1 +1,8 @@
-save_article.php
+<?php
+
+require 'core.php';
+
+
+if (isset($_POST))
+
+?>
