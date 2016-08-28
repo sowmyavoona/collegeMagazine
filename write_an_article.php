@@ -23,13 +23,13 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="title">Title</label>
 				<div class="col-sm-4">
-					<input type="text" class="form-control" id="title" placeholder="Title of your article">
+					<input type="text" class="form-control" name="title" id="title" placeholder="Title of your article">
 				</div>
 			</div>
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="author">Author</label>
 				<div class="col-sm-4">
-					<input type="text" class="form-control" id="author" placeholder="">
+					<input type="text" class="form-control" name="author" id="author" placeholder="">
 				</div>
 			</div>
 			<div class="form-group">
@@ -37,23 +37,23 @@
 				<div class="col-sm-4">
 					<div class="input-group">
 						<span class="input-group-addon">
-							<input type="checkbox" aria-label="life"></input>
+							<input type="radio" name="category" value="life" aria-label="life"></input>
 							<label class="control-label">Life</label>
 						</span>
 						<span class="input-group-addon">
-							<input type="checkbox" aria-label="hacks"></input>
-							<label class="control-label">hacks</label>
+							<input type="radio" name="category" value="hacks" aria-label="hacks"></input>
+							<label class="control-label">Hacks</label>
 						</span>
 						<span class="input-group-addon">
-							<input type="checkbox" aria-label="health"></input>
+							<input type="radio" name="category" value="health" aria-label="health"></input>
 							<label class="control-label">Health</label>
 						</span>
 						<span class="input-group-addon">
-							<input type="checkbox" aria-label="fun"></input>
+							<input type="radio" name="category" value="fun" aria-label="fun"></input>
 							<label class="control-label">Fun</label>
 						</span>
 						<span class="input-group-addon">
-							<input type="checkbox" aria-label="others"></input>
+							<input type="radio" name="category" value="others" aria-label="others"></input>
 							<label class="control-label">Others</label>
 						</span>
 					</div>
@@ -62,13 +62,13 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="content">Content</label>
 				<div class="col-sm-4">
-					<textarea class="form-control" rows="10" id="content"></textarea>
+					<textarea class="form-control" rows="10" id="content" name="content"></textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="title">Meta Tags</label>
 				<div class="col-sm-4">
-					<input type="text" class="form-control" id="title" placeholder="Enter keywords in your article">
+					<input type="text" class="form-control" name="metatags" id="metatags" placeholder="Enter keywords in your article">
 				</div>
 			</div>
 			
@@ -77,6 +77,7 @@
 					<button type="submit" onclick=""save_article.php class="btn btn-default">Submit</button>
 				</div>
 			</div>
+
 		</form>
 	</div>
 
