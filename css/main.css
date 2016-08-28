@@ -1,14 +1,52 @@
 
+@font-face {
+   font-family: AdventPro;
+   src: url(../fonts/AdventPro/AdventPro-Bold.ttf);
+}
+
+@font-face {
+   font-family: TextMe;
+   src: url(../fonts/TextMe/TextMeOne-Regular.ttf);
+}
+
+@font-face {
+   font-family: TheGirlNextDoor;
+   src: url(../fonts/TheGirlNextDoor/TheGirlNextDoor.ttf);
+}
+
 body {
-	background-color: white;
+	background-color: #f2f2f2;
 	color: gray;
+	font-family: TheGirlNextDoor;
+	overflow-x: hidden;
 }
 
 .super-header {
-	background-color: #39c6a3;
-
+	background-color: #8A2BE2;
+	color: white;
 }
 
+.article {
+	background-color: white;
+	margin: 0px 0px 0px 0px;
+	padding: 2px;
+}
+
+.popular-list {
+	right: 0;
+	background-color: white;
+}
+
+footer {
+	background-color: white;
+	position: fixed;
+	bottom: -2px;
+	right: 0;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+/*
 .navbar {
 	height: 10px ;
 }
@@ -16,7 +54,7 @@ body {
 .navbar a {
 	color: gray;
 }
-
+/*
 div {
 	border: 2px solid gray;
 }
@@ -27,5 +65,6 @@ footer {
 }
 
 .footer a {
-	color: #39c6a2;
+	color: #8A2BE2;
 }
+*/

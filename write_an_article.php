@@ -11,9 +11,15 @@
 <body>
 
 	<div class="container-fluid">
-		<h2>Do you have something interesting?</h2>
+
+		<h2>
+			<button type="button" class="btn btn-default" aria-label="Back Arrow">
+				<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+			</button>
+			Do you have something interesting?
+		</h2>
 		
-		<form class="form-horizontal well">
+		<form class="form-horizontal well" action="save_article.php" method="POST">
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="title">Title</label>
 				<div class="col-sm-4">
@@ -60,7 +66,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="title">MetaTags</label>
+				<label class="control-label col-sm-2" for="title">Meta Tags</label>
 				<div class="col-sm-4">
 					<input type="text" class="form-control" id="title" placeholder="Enter keywords in your article">
 				</div>
@@ -68,7 +74,7 @@
 			
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default">Submit</button>
+					<button type="submit" onclick=""save_article.php class="btn btn-default">Submit</button>
 				</div>
 			</div>
 		</form>
